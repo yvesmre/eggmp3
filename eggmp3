@@ -34,7 +34,7 @@ configureSearch () {
 getSearch () {
     query=$(gum input --placeholder "What would you like to search for?")
     results=$(gum spin --spinner=points --title "Searching for \"$query\"... (this may take a while)" --show-output -- python eggmp3.py "$query")
-    echo $results
+    # echo $results
 }
 
 parseSearch () {
